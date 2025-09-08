@@ -1,0 +1,249 @@
+html,
+body {
+	height: 100%;
+	margin: 0px;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #ffffff;
+	color: #222;
+	font-size: 14px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	background-color: #e0ffff;
+}
+
+.header-left {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+#logo {
+	width: 60px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.search-bar input {
+	padding: 8px 16px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+.search-bar button {
+	background: #6aa5c5;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.search-bar button:hover {
+	background-color: rgb(54, 187, 228);
+}
+
+.search-bar button img {
+	width: 18px;
+}
+
+.header-right {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	cursor: pointer;
+}
+
+.header-right .icon {
+	width: 28px;
+}
+
+.webmail-content {
+	display: flex;
+	height: calc(100% - 60px);
+}
+
+.navbar {
+	margin: 10px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+}
+
+.navbar button {
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 1px;
+}
+
+.navbar .compose-button {
+	margin-left: 12px;
+	background-color: #6aa5c5;
+	border-radius: 20px;
+	padding: 10px;
+	width: 180px;
+	align-self: center;
+}
+
+.compose-button:hover {
+	background-color: rgb(54, 187, 228);
+}
+
+.navbar .mailbox-nav {
+	margin: 0px;
+	padding: 8px 12px;
+	width: 100%;
+	border-radius: 0 20px 20px 0;
+}
+
+.mailbox-nav:hover {
+	background-color: #d8f1ff;
+}
+
+.navbar .folder-list {
+	list-style-type: none;
+	padding: 0px;
+	margin: 4px 0px;
+	gap: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.navbar .folder-list .icon {
+	width: 20px;
+	margin: 0px 8px;
+}
+
+.navbar .add-folder {
+	margin-left: 12px;
+	background-color: #6aa5c5;
+	border-radius: 20px;
+	padding: 10px;
+	width: 180px;
+	align-self: center;
+}
+
+.add-folder:hover {
+	background-color: rgb(54, 187, 228);
+}
+
+.mail-box {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.header-list {
+	margin: 0px 8px;
+	padding: 12px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 6px;
+}
+
+.header-list button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.header-list .icon {
+	width: 18px;
+	height: 18px;
+	display: block;
+}
+
+.mail-list {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	margin: 0rem 1rem;
+	overflow: hidden;
+}
+
+.mail-list ul {
+	list-style-type: none;
+	padding: 0px 20px;
+}
+
+.mail-list li {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 6px 8px;
+	border-bottom: 1px solid #ddd;
+}
+
+.mail-list li button {
+	margin-left: auto;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 4px;
+}
+
+.elements-list {
+	flex: 1;
+	overflow-y: auto;
+	scrollbar-color: rgb(231, 231, 231) rgb(255, 255, 255);
+  	scrollbar-width: thin;
+}
+
+.elements-list .subject {
+	font-weight: bold;
+}
+
+.delete {
+	width: 15px;
+}
+
+.mail-content {
+	flex: 1;
+	margin: 1rem;
+	padding: 28px 0px 40px 40px;
+	border-top: 1px solid rgb(40, 128, 163);
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.mail-content .textbox {
+	flex: 1;
+	overflow-y: auto;
+	margin-top: 1rem;
+	padding-right: 28px;
+	scrollbar-color: rgb(231, 231, 231) rgb(255, 255, 255);
+  	scrollbar-width: thin;
+}
