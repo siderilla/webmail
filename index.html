@@ -26,8 +26,10 @@
 		</div>
 	</header>
 	<div class="webmail-content">
-		<div class="navbar">
-			<button class="compose-button" type="button">COMPOSE</button>
+		<nav class="navbar">
+			<button class="compose-button" type="button"  onclick="window.open('compose.html','targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=700,height=500')">
+				COMPOSE
+			</button>
 			<ul class="folder-list">
 				<li>
 					<button class="mailbox-nav">
@@ -51,10 +53,10 @@
 				</li>
 			</ul>
 			<button class="add-folder" type="button">+ add custom folder</button>
-		</div>
+		</nav>
 		<div class="mail-box">
-			<div class="mail-list">
-				<div class="header-list">
+			<div class="header-list">
+				<div class="num-messages">
 					<span>displayed 15 of 135 messages</span>
 					<button>
 						<img class="icon" src="assets/arrow-left.svg" alt="arrow-left">
@@ -63,154 +65,130 @@
 						<img class="icon" src="assets/arrow-right.svg" alt="arrow-right">
 					</button>
 				</div>
-				<div class="elements-list">
-					<ul>
-						<li>
-							<input type="checkbox">
-							<span class="date">Date: 08/09 | </span>
-							<span class="sender">From: Mario Rossi | </span>
-							<span class="subject">Meeting</span>
-							<span class="preview"> | Ciao, ti ricordo che domani abbiamo la riunione...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-						<li>
-							<input type="checkbox">
-							<span class="date">Date: 07/09 | </span>
-							<span class="sender">From: Support | </span>
-							<span class="subject">Benvenuto</span>
-							<span class="preview"> | Grazie per esserti registrato al nostro servizio...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-												<li>
-							<input type="checkbox">
-							<span class="date">Date: 08/09 | </span>
-							<span class="sender">From: Mario Rossi | </span>
-							<span class="subject">Meeting</span>
-							<span class="preview"> | Ciao, ti ricordo che domani abbiamo la riunione...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-						<li>
-							<input type="checkbox">
-							<span class="date">Date: 07/09 | </span>
-							<span class="sender">From: Support | </span>
-							<span class="subject">Benvenuto</span>
-							<span class="preview"> | Grazie per esserti registrato al nostro servizio...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-												<li>
-							<input type="checkbox">
-							<span class="date">Date: 08/09 | </span>
-							<span class="sender">From: Mario Rossi | </span>
-							<span class="subject">Meeting</span>
-							<span class="preview"> | Ciao, ti ricordo che domani abbiamo la riunione...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-						<li>
-							<input type="checkbox">
-							<span class="date">Date: 07/09 | </span>
-							<span class="sender">From: Support | </span>
-							<span class="subject">Benvenuto</span>
-							<span class="preview"> | Grazie per esserti registrato al nostro servizio...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-												<li>
-							<input type="checkbox">
-							<span class="date">Date: 08/09 | </span>
-							<span class="sender">From: Mario Rossi | </span>
-							<span class="subject">Meeting</span>
-							<span class="preview"> | Ciao, ti ricordo che domani abbiamo la riunione...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-						<li>
-							<input type="checkbox">
-							<span class="date">Date: 07/09 | </span>
-							<span class="sender">From: Support | </span>
-							<span class="subject">Benvenuto</span>
-							<span class="preview"> | Grazie per esserti registrato al nostro servizio...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-												<li>
-							<input type="checkbox">
-							<span class="date">Date: 08/09 | </span>
-							<span class="sender">From: Mario Rossi | </span>
-							<span class="subject">Meeting</span>
-							<span class="preview"> | Ciao, ti ricordo che domani abbiamo la riunione...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-						<li>
-							<input type="checkbox">
-							<span class="date">Date: 07/09 | </span>
-							<span class="sender">From: Support | </span>
-							<span class="subject">Benvenuto</span>
-							<span class="preview"> | Grazie per esserti registrato al nostro servizio...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-												<li>
-							<input type="checkbox">
-							<span class="date">Date: 08/09 | </span>
-							<span class="sender">From: Mario Rossi | </span>
-							<span class="subject">Meeting</span>
-							<span class="preview"> | Ciao, ti ricordo che domani abbiamo la riunione...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-						<li>
-							<input type="checkbox">
-							<span class="date">Date: 07/09 | </span>
-							<span class="sender">From: Support | </span>
-							<span class="subject">Benvenuto</span>
-							<span class="preview"> | Grazie per esserti registrato al nostro servizio...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-												<li>
-							<input type="checkbox">
-							<span class="date">Date: 08/09 | </span>
-							<span class="sender">From: Mario Rossi | </span>
-							<span class="subject">Meeting</span>
-							<span class="preview"> | Ciao, ti ricordo che domani abbiamo la riunione...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-						<li>
-							<input type="checkbox">
-							<span class="date">Date: 07/09 | </span>
-							<span class="sender">From: Support | </span>
-							<span class="subject">Benvenuto</span>
-							<span class="preview"> | Grazie per esserti registrato al nostro servizio...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-												<li>
-							<input type="checkbox">
-							<span class="date">Date: 08/09 | </span>
-							<span class="sender">From: Mario Rossi | </span>
-							<span class="subject">Meeting</span>
-							<span class="preview"> | Ciao, ti ricordo che domani abbiamo la riunione...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-						<li>
-							<input type="checkbox">
-							<span class="date">Date: 07/09 | </span>
-							<span class="sender">From: Support | </span>
-							<span class="subject">Benvenuto</span>
-							<span class="preview"> | Grazie per esserti registrato al nostro servizio...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-												<li>
-							<input type="checkbox">
-							<span class="date">Date: 08/09 | </span>
-							<span class="sender">From: Mario Rossi | </span>
-							<span class="subject">Meeting</span>
-							<span class="preview"> | Ciao, ti ricordo che domani abbiamo la riunione...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-						<li>
-							<input type="checkbox">
-							<span class="date">Date: 07/09 | </span>
-							<span class="sender">From: Support | </span>
-							<span class="subject">Benvenuto</span>
-							<span class="preview"> | Grazie per esserti registrato al nostro servizio...</span>
-							<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
-						</li>
-					</ul>
+			</div>
+
+			<div class="elements-list">
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">08/09</div>
+					<div class="preview-element">Mario Rossi</div>
+					<div class="preview-element subject">Meeting</div>
+					<div class="preview-element">Ciao, ti ricordo che domani abbiamo la riunione...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
 				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">07/09</div>
+					<div class="preview-element">From: Support</div>
+					<div class="preview-element subject">Benvenuto</div>
+					<div class="preview-element">Grazie per esserti registrato al nostro servizio...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">08/09</div>
+					<div class="preview-element">Mario Rossi</div>
+					<div class="preview-element subject">Meeting</div>
+					<div class="preview-element">Ciao, ti ricordo che domani abbiamo la riunione...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">07/09</div>
+					<div class="preview-element">From: Support</div>
+					<div class="preview-element subject">BENVE</div>
+					<div class="preview-element">Grazie per esserti registrato al nostro servizio...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">08/09</div>
+					<div class="preview-element">Mario Rossi</div>
+					<div class="preview-element subject">Un titolo davvero molto molto molto molto molto molto lungo</div>
+					<div class="preview-element">Ciao, ti ricordo che domani abbiamo la riunione...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">08/09</div>
+					<div class="preview-element">Mario Rossi</div>
+					<div class="preview-element subject">Meeting</div>
+					<div class="preview-element">Ciao, ti ricordo che domani abbiamo la riunione...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">07/09</div>
+					<div class="preview-element">From: Support</div>
+					<div class="preview-element subject">Benvenuto</div>
+					<div class="preview-element">Grazie per esserti registrato al nostro servizio...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">08/09</div>
+					<div class="preview-element">Mario Rossi</div>
+					<div class="preview-element subject">Meeting</div>
+					<div class="preview-element">Ciao, ti ricordo che domani abbiamo la riunione...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">07/09</div>
+					<div class="preview-element">From: Support</div>
+					<div class="preview-element subject">BENVE</div>
+					<div class="preview-element">Grazie per esserti registrato al nostro servizio...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">08/09</div>
+					<div class="preview-element">Mario Rossi</div>
+					<div class="preview-element subject">Un titolo davvero molto molto molto molto molto molto lungo</div>
+					<div class="preview-element">Ciao, ti ricordo che domani abbiamo la riunione...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">08/09</div>
+					<div class="preview-element">Mario Rossi</div>
+					<div class="preview-element subject">Meeting</div>
+					<div class="preview-element">Ciao, ti ricordo che domani abbiamo la riunione...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">07/09</div>
+					<div class="preview-element">From: Support</div>
+					<div class="preview-element subject">Benvenuto</div>
+					<div class="preview-element">Grazie per esserti registrato al nostro servizio...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">08/09</div>
+					<div class="preview-element">Mario Rossi</div>
+					<div class="preview-element subject">Meeting</div>
+					<div class="preview-element">Ciao, ti ricordo che domani abbiamo la riunione...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">07/09</div>
+					<div class="preview-element">From: Support</div>
+					<div class="preview-element subject">BENVE</div>
+					<div class="preview-element">Grazie per esserti registrato al nostro servizio...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+				<div class="mail-preview">
+					<input class="preview-element" type="checkbox">
+					<div class="preview-element">08/09</div>
+					<div class="preview-element">Mario Rossi</div>
+					<div class="preview-element subject">Un titolo davvero molto molto molto molto molto molto lungo</div>
+					<div class="preview-element">Ciao, ti ricordo che domani abbiamo la riunione...</div>
+					<button><img class="delete" src="assets/bin.svg" alt="bin"></button>
+				</div>
+
 			</div>
 			<div class="mail-content">
 				<span>From: Mario Rossi</span>
@@ -218,80 +196,118 @@
 				<span>Date: 08/09</span>
 				<span>Subject: Meeting</span>
 				<span class="textbox">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse nemo quisquam ad libero totam dolor quia! 
-					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium magnam et! Doloremque commodi voluptates 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Assumenda, doloremque ratione illo optio officia quas nulla omnis beatae distinctio nostrum esse
+					nemo quisquam ad libero totam dolor quia!
+					Debitis, voluptates. Sit itaque ratione pariatur incidunt placeat molestiae iusto, accusantium
+					magnam et! Doloremque commodi voluptates
 					veniam suscipit architecto iusto dolore nihil? Ipsum, vero?
-				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </body>
 

@@ -49,7 +49,7 @@ header {
 	border-radius: 8px;
 }
 
-.search-bar button {
+button {
 	background: #6aa5c5;
 	border: none;
 	padding: 8px 12px;
@@ -60,7 +60,7 @@ header {
 	justify-content: center;
 }
 
-.search-bar button:hover {
+button:hover {
 	background-color: rgb(54, 187, 228);
 }
 
@@ -161,67 +161,71 @@ header {
 }
 
 .header-list {
-	margin: 0px 8px;
-	padding: 12px 0px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	gap: 6px;
-}
-
-.header-list button {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 0;
-	background: none;
-	border: none;
-	cursor: pointer;
-}
-
-.header-list .icon {
-	width: 18px;
-	height: 18px;
-	display: block;
-}
-
-.mail-list {
-	flex: 1;
 	display: flex;
 	flex-direction: column;
+	align-items: flex-end;
+	gap: 8px;
+	padding: 12px 10px;
 	margin: 0rem 1rem;
 	overflow: hidden;
 }
 
-.mail-list ul {
-	list-style-type: none;
-	padding: 0px 20px;
-}
-
-.mail-list li {
+.num-messages {
 	display: flex;
 	align-items: center;
-	gap: 8px;
-	padding: 6px 8px;
-	border-bottom: 1px solid #ddd;
 }
 
-.mail-list li button {
-	margin-left: auto;
+.num-messages span {
+	padding: 10px;
+}
+
+.num-messages button {
 	background: none;
 	border: none;
 	cursor: pointer;
-	padding: 4px;
+	margin-left: -5px
+}
+
+.icon {
+	width: 18px;
+	height: 18px;
+	display: block;
 }
 
 .elements-list {
 	flex: 1;
 	overflow-y: auto;
 	scrollbar-color: rgb(231, 231, 231) rgb(255, 255, 255);
-  	scrollbar-width: thin;
+	scrollbar-width: thin;
+	margin: 1rem;
+	padding: 12px 0px 12px 40px;
 }
 
-.elements-list .subject {
+.elements-list button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 4px;
+}
+
+.mail-preview {
+	display: grid;
+	grid-template-columns: 20px 90px 160px 200px 1fr 24px;
+	align-items: center;
+	column-gap: 12px;
+	padding: 8px 0;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+}
+
+.mail-preview .preview-element {
+	border-right: #ddd solid 1px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.mail-preview .subject {
 	font-weight: bold;
 }
 
@@ -245,5 +249,71 @@ header {
 	margin-top: 1rem;
 	padding-right: 28px;
 	scrollbar-color: rgb(231, 231, 231) rgb(255, 255, 255);
-  	scrollbar-width: thin;
+	scrollbar-width: thin;
+}
+
+/* COMPOSE STYLE */
+
+.compose-form {
+	padding: 40px;
+	margin-right: 10%;
+}
+
+.compose-element {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	margin-bottom: 24px;
+}
+
+.compose-element label {
+	text-align: right;
+	margin-right: 10px;
+	align-self: baseline;
+}
+
+input {
+	font-family: inherit;
+	padding: 0.25em 0.5em;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+input:focus {
+	outline: none !important;
+	border: 1px solid crimson;
+	box-shadow: 1px 0px 3px #cccccc;
+}
+
+textarea {
+	font-family: inherit;
+	font-size: small;
+	padding: 0.25em 0.5em;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+textarea:focus {
+	outline: none !important;
+	border: 1px solid crimson;
+	box-shadow: 1px 0px 3px #cccccc;
+}
+
+.compose-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* RESPONSIVE MOBILE */
+
+@media (max-width: 768px) {
+	nav {
+    	visibility: hidden;
+		display: none;
+
+/* https://stackoverflow.com/questions/28879905/bootstrap-css-how-to-make-always-visible-navbar-toggle */
+
+	}
 }

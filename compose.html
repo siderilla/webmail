@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Compose New Mail</title>
+</head>
+<body>
+	<form class="compose-form" action="index.html">
+		<div class="compose-element">
+			<label for="to">To:</label>
+			<input type="text" name="to">
+		</div>
+		<div class="compose-element">
+			<label for="subject">Subject:</label>
+			<input type="text" name="subject">
+		</div>
+		<div class="compose-element">
+			<label for="content">Text:</label>
+			<textarea type="text" name="content" rows="10" cols="50" placeholder="Write here..."></textarea>
+		</div>
+	</form>
+	<div class="compose-buttons">
+		<button class="compose-btn">
+			<img class="icon" src="assets/sendmail.svg" alt="">Send now
+		</button>
+		<button class="compose-btn">
+			<img class="icon" src="assets/save.svg" alt="">Save draft
+		</button>
+		<button class="compose-btn">
+			<img class="icon" src="assets/bin.svg" alt="">Discard
+		</button>
+	</div>
+</body>
+</html>
