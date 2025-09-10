@@ -43,10 +43,15 @@ header {
 	gap: 12px;
 }
 
-.search-bar input {
+#search-input {
 	padding: 8px 16px;
-	border: 1px solid #ccc;
 	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+	border: none;
+}
+
+.profile-icon {
+	width: 28px;
 }
 
 button {
@@ -165,8 +170,8 @@ button:hover {
 	flex-direction: column;
 	align-items: flex-end;
 	gap: 8px;
-	padding: 12px 10px;
-	margin: 0rem 1rem;
+	padding: 12px 10px 0px;
+	margin: 0rem 1rem 0rem;
 	overflow: hidden;
 }
 
@@ -197,8 +202,8 @@ button:hover {
 	overflow-y: auto;
 	scrollbar-color: rgb(231, 231, 231) rgb(255, 255, 255);
 	scrollbar-width: thin;
-	margin: 1rem;
-	padding: 12px 0px 12px 40px;
+	margin: 12px 12px 0px 0px;
+	padding: 12px 0px 12px 20px;
 }
 
 .elements-list button {
@@ -219,7 +224,6 @@ button:hover {
 }
 
 .mail-preview .preview-element {
-	border-right: #ddd solid 1px;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
@@ -236,7 +240,7 @@ button:hover {
 .mail-content {
 	flex: 1;
 	margin: 1rem;
-	padding: 28px 0px 40px 40px;
+	padding: 28px 0px 40px 20px;
 	border-top: 1px solid rgb(40, 128, 163);
 	display: flex;
 	flex-direction: column;
@@ -306,14 +310,99 @@ textarea:focus {
 	justify-content: space-between;
 }
 
+#menu-button {
+	display: none;
+	background: none;
+	border: none;
+	padding: 6px;
+}
+
+#overlay {
+	display: none;
+}
+
 /* RESPONSIVE MOBILE */
 
 @media (max-width: 768px) {
-	nav {
-    	visibility: hidden;
+
+	#search-input {
 		display: none;
-
-/* https://stackoverflow.com/questions/28879905/bootstrap-css-how-to-make-always-visible-navbar-toggle */
-
 	}
+
+	#search-input.active {
+		display: block;
+		left: 0;
+		width: 30%;
+		background: white;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+		border: none;
+		z-index: 1100;
+	}
+
+	#menu-button {
+		display: block;
+		background: #6aa5c5;
+		border: none;
+		padding: 8px 12px;
+		border-radius: 8px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.navbar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		background: #f5f5f5;
+		padding-top: 60px;
+		width: 220px;
+		transform: translateX(-100%);
+		z-index: 1001;
+	}
+
+	.navbar.active {
+		transform: translateX(0);
+	}
+
+	#overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 1000;
+		display: none;
+	}
+
+	#overlay.active {
+		display: block;
+	}
+
+	.title,
+	.name {
+		display: none;
+	}
+
+	.mail-preview {
+		display: grid;
+		grid-template-columns: 0.5fr 1fr 1.5fr 3fr 1fr;
+		align-items: center;
+		column-gap: 12px;
+		padding: 8px 0;
+		border-bottom: 1px solid #ddd;
+		text-align: left;
+	}
+
+	.preview-element .subject {
+		border-right: none;
+	}
+
+	.preview {
+		display: none;
+	}
+
 }
